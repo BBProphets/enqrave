@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var urlPath = window.location.pathname;
+        var redirectionMap = {
+            "/ADCV": "https://drive.google.com/drive/folders/1x6bfr0YbNPYCD93y2pyfQ-fqjYx9S-IQ",
+            "/customer2": "https://another-url.com/customer2"
+            // Add more mappings as needed
+        };
+
+        var finalUrl = redirectionMap[urlPath] || "https://enqrave.com";
+        window.location.href = finalUrl;
+    </script>
+</head>
+<body>
+    Redirecting...
+</body>
+</html>
